@@ -1,19 +1,18 @@
 import React from 'react';
 // Importamos los componentes del Core
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-// Importamos componentes personalizados
-import About from '../About/About';
+import './Header.scss';
+
 const Header = () => {
 
     return (
-        <BrowserRouter>
-            <Switch>
-                <Route path="/about">
-                    <About/>
-                </Route>
-            </Switch>
-        </BrowserRouter>
+        <div className="header">
+            <NavLink to="/home">Home</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/about">About</NavLink>
+            <NavLink to="/login">Login</NavLink>
+        </div>
     );
 }
 

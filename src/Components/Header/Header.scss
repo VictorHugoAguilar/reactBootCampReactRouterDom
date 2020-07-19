@@ -1,0 +1,22 @@
+@import "../../colors.scss";
+.header {
+    all: unset;
+    display: flex;
+    justify-content: space-around;
+    background-color: $dark;
+    color: $ligth;
+    padding: 0.4em;
+    a {
+        all: unset;
+        border-radius: 0.3em;
+        padding: 0.8em;
+        background-color: $solid;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    a:hover {
+        background-color: $ligth;
+        color: $dark;
+        cursor: pointer;
+    }
+}
